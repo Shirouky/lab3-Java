@@ -10,36 +10,21 @@ public class Creature {
     private int dangerLevel;
     private ArrayList<String> areas;
     private String firstMention;
-    private Map<String, Boolean> vulnerabilities = new HashMap<>();
+    private final Map<String, Boolean> vulnerabilities = new HashMap<>();
     private double height;
     private int weight;
     private String activityTime;
     private Recipe recipe;
-    private String source;
+    private final String source;
 
     public Creature(String name, String source) {
         this.name = name;
         this.source = source;
     }
 
-    public Creature(String name, String description, int dangerLevel, ArrayList<String> areas,
-                    String firstMention, Double height, int weight,
-                    String activityTime, Recipe recipe, String source) {
-        this.name = name;
-        this.description = description;
-        this.dangerLevel = dangerLevel;
-        this.areas = areas;
-        this.firstMention = firstMention;
-        this.height = height;
-        this.weight = weight;
-        this.activityTime = activityTime;
-        this.recipe = recipe;
-        this.source = source;
-    }
-
-    public void print() {
-        System.out.println(this.name + " " + this.description + " " + this.dangerLevel + " " + this.areas + " " + this.firstMention + " " + this.height + " " + this.weight + " " + this.activityTime + " " + this.source);
-    }
+//    public void print() {
+//        System.out.println(this.name + " " + this.description + " " + this.dangerLevel + " " + this.areas + " " + this.firstMention + " " + this.height + " " + this.weight + " " + this.activityTime + " " + this.source);
+//    }
 
     public void addVulnerability(String type, boolean isVulnerable) {
         vulnerabilities.put(type, isVulnerable);
@@ -52,7 +37,6 @@ public class Creature {
     public String getName() {
         return name;
     }
-
 
     public String getDescription() {
         return description;
@@ -90,11 +74,7 @@ public class Creature {
         return vulnerabilities;
     }
 
-    public void setVulnerabilities(Map<String, Boolean> vulnerabilities) {
-        this.vulnerabilities = vulnerabilities;
-    }
-
-    public Double getHeight() {
+    public double getHeight() {
         return height;
     }
 
@@ -128,9 +108,5 @@ public class Creature {
 
     public String getSource() {
         return source;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
     }
 }

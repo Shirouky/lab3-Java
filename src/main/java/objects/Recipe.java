@@ -8,16 +8,7 @@ public class Recipe {
     private int cookingTime;
     private String effectiveness;
 
-    // Конструкторы, геттеры и сеттеры
     public Recipe() {}
-
-    public Recipe(String name, Map<String, Integer> ingredients,
-                  int cookingTime, String effectiveness) {
-        this.name = name;
-        this.ingredients = ingredients;
-        this.cookingTime = cookingTime;
-        this.effectiveness = effectiveness;
-    }
 
     public String getName() {
         return name;

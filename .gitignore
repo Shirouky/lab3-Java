@@ -39,3 +39,7 @@ build/
 
 .idea/artifacts/lab3_jar.xml
 /out/
+lab3.drawio
+result.json
+result.xml
+result.yaml

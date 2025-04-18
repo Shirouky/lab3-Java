@@ -41,7 +41,6 @@ public class XMLExporter extends CreatureExporter {
             if (this.hasNext()) return next.exportCreatures(creatures);
             else return false;
         } catch (IOException | XMLStreamException e) {
-            e.printStackTrace();
             return false;
         }
     }

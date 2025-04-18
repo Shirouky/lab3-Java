@@ -85,12 +85,7 @@ public class GUI extends JFrame {
     }
 
     private void exportData() {
-        boolean result = false;
-        try {
-            result = this.controller.exportData(creatures);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        boolean result = this.controller.exportData(creatures);
         JOptionPane.showMessageDialog(this, result ? "Успешно сохранено" : "Ошибка");
     }
 

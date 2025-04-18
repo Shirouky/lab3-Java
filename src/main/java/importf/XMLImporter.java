@@ -133,7 +133,6 @@ public class XMLImporter extends CreatureImporter {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return creatures;

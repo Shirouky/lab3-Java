@@ -1,11 +1,9 @@
 package exportf;
 
-import com.fasterxml.jackson.databind.SerializationFeature;
 import objects.Creature;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
@@ -15,7 +13,6 @@ import java.util.Map;
 import objects.Recipe;
 
 public class YAMLExporter extends CreatureExporter {
-
     @Override
     public boolean exportCreatures(Map<String, List<Creature>> creatures) {
         var yamlCreatures = creatures.get("yaml");
@@ -40,7 +37,6 @@ public class YAMLExporter extends CreatureExporter {
             if (this.hasNext()) return next.exportCreatures(creatures);
             else return false;
         } catch (IOException e) {
-            e.printStackTrace();
             return false;
         }
     }

@@ -20,26 +20,20 @@ public class YAMLImporter extends CreatureImporter {
         if (!file.getName().endsWith(".yaml") && !file.getName().endsWith(".yml")) {
             return next != null ? next.importCreatures(file) : null;
         }
-
         try {
             FileInputStream inputStream = new FileInputStream(file);
             Map<String, Object> yamlData = yaml.load(inputStream);
-            return parseYAMLData(yamlData);
+            List<Creature> creatures = new ArrayList<>();
+            Map<String, Object> creaturesMap = (Map<String, Object>) yamlData.get("creatures");
+            for (Map.Entry<String, Object> entry : creaturesMap.entrySet()) {
+                Creature creature = parseCreature(entry.getKey(), (Map<String, Object>) entry.getValue());
+                creatures.add(creature);
+            }
+
+            return creatures;
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
             return null;
         }
-    }
-
-    private List<Creature> parseYAMLData(Map<String, Object> yamlData) {
-        List<Creature> creatures = new ArrayList<>();
-        Map<String, Object> creaturesMap = (Map<String, Object>) yamlData.get("creatures");
-        for (Map.Entry<String, Object> entry : creaturesMap.entrySet()) {
-            Creature creature = parseCreature(entry.getKey(), (Map<String, Object>) entry.getValue());
-            creatures.add(creature);
-        }
-
-        return creatures;
     }
 
     private Creature parseCreature(String name, Map<String, Object> creatureData) {

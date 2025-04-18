@@ -7,7 +7,6 @@ import importf.*;
 import exportf.*;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,7 +27,7 @@ public class Controller {
         return creatures;
     }
 
-    public boolean exportData(Map<String, List<Creature>> creatures) throws IOException {
+    public boolean exportData(Map<String, List<Creature>> creatures) {
         CreatureExporter jsonExporter = new JSONExporter();
         CreatureExporter xmlExporter = new XMLExporter();
         CreatureExporter yamlExporter = new YAMLExporter();
@@ -36,7 +35,6 @@ public class Controller {
         jsonExporter.setNext(xmlExporter);
         xmlExporter.setNext(yamlExporter);
 
-        jsonExporter.exportCreatures(creatures);
-        return true;
+        return jsonExporter.exportCreatures(creatures);
     }
 }

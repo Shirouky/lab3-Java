@@ -31,10 +31,8 @@ public class JSONImporter extends CreatureImporter {
                 Creature creature = parseCreature(creatureName, creatureNode);
                 creatures.add(creature);
             }
-
             return creatures;
         } catch (IOException e) {
-            e.printStackTrace();
             return null;
         }
     }
