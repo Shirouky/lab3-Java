@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bestiarium>
+    <creature name="Леший">
+        <description>Гибрид человека и лесного духа, охраняющий древние рощи</description>
+        <dangerLevel>7</dangerLevel>
+        <areas>
+            <area>в чащах Брокилона</area>
+            <area>в чащах Эдингель</area>
+        </areas>
+        <firstMention>1234-06-21</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии" quantity="false"/>
+            <vulnerability name="К оглушению" quantity="false"/>
+            <vulnerability name="К ядам" quantity="false"/>
+        </vulnerabilities>
+        <height>3</height>
+        <weight>300</weight>
+        <activityTime>Ночь</activityTime>
+        <recipe>
+            <name>Яд</name>
+            <ingredients>
+                <ingredient name="Корень мандрагоры" quantity="3"/>
+                <ingredient name="Пепел драконида" quantity="1"/>
+                <ingredient name="Эссенция полыни" quantity="1"/>
+            </ingredients>
+            <cookingTime>60</cookingTime>
+            <effectiveness>Умеренная</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Полуденница">
+        <description>Призрак, терроризирующий поля во время жатвы</description>
+        <dangerLevel>5</dangerLevel>
+        <areas>
+            <area>на полях Редании</area>
+            <area>в амбарах Туссента</area>
+        </areas>
+        <firstMention>1198-07-15</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии света" quantity="true"/>
+            <vulnerability name="К кровотечению" quantity="false"/>
+        </vulnerabilities>
+        <height>170</height>
+        <weight>0</weight>
+        <activityTime>День</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Лепестки лунного цветка" quantity="2"/>
+                <ingredient name="Серебряная нить" quantity="1"/>
+                <ingredient name="Экстракт чеснока" quantity="1"/>
+            </ingredients>
+            <cookingTime>30</cookingTime>
+            <effectiveness>Высокая</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Катакан">
+        <description>Крылатый демон с хвостом скорпиона</description>
+        <dangerLevel>9</dangerLevel>
+        <areas>
+            <area>в горных пещерах Туссента</area>
+        </areas>
+        <area>Обитает в горных пещерах Туссента</area>
+        <firstMention>1150-04-12</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии огня" quantity="false"/>
+            <vulnerability name="К ядам" quantity="false"/>
+        </vulnerabilities>
+        <height>2</height>
+        <weight>200</weight>
+        <activityTime>Сумерки</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Жало мантикоры" quantity="4"/>
+                <ingredient name="Нефритовая пыль" quantity="2"/>
+                <ingredient name="Спирт Альберихта" quantity="1"/>
+            </ingredients>
+            <cookingTime>90</cookingTime>
+            <effectiveness>Критическая</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Кикимора">
+        <description>Болотная нежить из гниющих останков</description>
+        <dangerLevel>6</dangerLevel>
+        <areas>
+            <area>в топях Вендена</area>
+        </areas>
+        <firstMention>1221-09-03</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии земли" quantity="true"/>
+            <vulnerability name="К удушью" quantity="false"/>
+        </vulnerabilities>
+        <height>1</height>
+        <weight>15</weight>
+        <activityTime>Ночь</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Грибы-поганки" quantity="5"/>
+                <ingredient name="Глаз василиска" quantity="1"/>
+                <ingredient name="Роса папоротника" quantity="3"/>
+            </ingredients>
+            <cookingTime>45</cookingTime>
+            <effectiveness>Средняя</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Элементаль льда">
+        <description>Дух вечной зимы</description>
+        <dangerLevel>10</dangerLevel>
+        <areas>
+            <area>в ледниках Ковира</area>
+        </areas>
+        <firstMention>1105-12-01</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К заморозке" quantity="false"/>
+            <vulnerability name="К дроблению" quantity="false"/>
+            <vulnerability name="К удушью" quantity="false"/>
+        </vulnerabilities>
+        <height>5</height>
+        <weight>100000000</weight>
+        <activityTime>Всегда</activityTime>
+        <recipe>
+            <name>Яд</name>
+            <ingredients>
+                <ingredient name="Сердце огненного элементаля" quantity="1"/>
+                <ingredient name="Сера" quantity="3"/>
+                <ingredient name="Расплавленное железо" quantity="1"/>
+            </ingredients>
+            <cookingTime>120</cookingTime>
+            <effectiveness>Переменная</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Волколак">
+        <description>Получеловек-полуволк</description>
+        <dangerLevel>7</dangerLevel>
+        <areas>
+            <area>в городах</area>
+            <area>около людских поселений</area>
+        </areas>
+        <firstMention>1117-08-23</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии огня" quantity="true"/>
+            <vulnerability name="К ядам" quantity="false"/>
+            <vulnerability name="К кровотечению" quantity="false"/>
+        </vulnerabilities>
+        <height>2.5</height>
+        <weight>250</weight>
+        <activityTime>Ночью, особенно в полнолуние</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Собачье сало" quantity="1"/>
+                <ingredient name="Волкобой" quantity="4"/>
+            </ingredients>
+            <cookingTime>30</cookingTime>
+            <effectiveness>Средняя</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Бес">
+        <description>Ходячая гора мускулов, увенчанная рогатой головой с пастью, полной острых зубов</description>
+        <dangerLevel>8</dangerLevel>
+        <areas>
+            <area>в густых чащах</area>
+            <area>в топях</area>
+            <area>на болотах</area>
+        </areas>
+        <firstMention>1120-03-29</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии огня" quantity="false"/>
+            <vulnerability name="К оглушению" quantity="false"/>
+            <vulnerability name="К замедлению" quantity="false"/>
+            <vulnerability name="К контролю разума" quantity="false"/>
+            <vulnerability name="К магии воздух" quantity="false"/>
+        </vulnerabilities>
+        <height>4</height>
+        <weight>600</weight>
+        <activityTime>Ночью</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Собачье сало" quantity="1"/>
+                <ingredient name="Омелла" quantity="5"/>
+            </ingredients>
+            <cookingTime>40</cookingTime>
+            <effectiveness>Низкая</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Виверна">
+        <description>Виверну часто путают с драконом, и хотя она значительно мельче своих знаменитых родственников и не
+            пышет огнем, она и без того чудище достаточно грозное
+        </description>
+        <dangerLevel>8</dangerLevel>
+        <areas>
+            <area>в горах</area>
+        </areas>
+        <firstMention>1120-03-29</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии воздуха" quantity="true"/>
+            <vulnerability name="К картечи" quantity="true"/>
+            <vulnerability name="К магии огня" quantity="false"/>
+        </vulnerabilities>
+        <height>4</height>
+        <weight>600</weight>
+        <activityTime>Ночью</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Алхимическая паста" quantity="1"/>
+                <ingredient name="Желудок василиска" quantity="1"/>
+                <ingredient name="Желудок накера-воина" quantity="1"/>
+                <ingredient name="Аренария" quantity="1"/>
+                <ingredient name="Альбедо" quantity="1"/>
+            </ingredients>
+            <cookingTime>100</cookingTime>
+            <effectiveness>Критическая</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Голем">
+        <description>Это каменная масса, оживлённая заклятием</description>
+        <dangerLevel>7</dangerLevel>
+        <areas>
+            <area>в Эльфских руинах</area>
+            <area>в пещерах</area>
+        </areas>
+        <firstMention>1015-05-19</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии огня" quantity="true"/>
+            <vulnerability name="К оглушению" quantity="false"/>
+            <vulnerability name="К кровотечению" quantity="false"/>
+            <vulnerability name="К ядам" quantity="false"/>
+        </vulnerabilities>
+        <height>4</height>
+        <weight>3000</weight>
+        <activityTime>Любое время</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Гриб-дождевик" quantity="4"/>
+                <ingredient name="Собачье сало" quantity="1"/>
+            </ingredients>
+            <cookingTime>20</cookingTime>
+            <effectiveness>Умеренная</effectiveness>
+        </recipe>
+    </creature>
+
+    <creature name="Ревун">
+        <description>Это каменная масса, оживлённая заклятием</description>
+        <dangerLevel>6</dangerLevel>
+        <areas>
+            <area>в Велене</area>
+        </areas>
+        <firstMention>995-10-02</firstMention>
+        <vulnerabilities>
+            <vulnerability name="К магии огня" quantity="true"/>
+            <vulnerability name="К оглушению" quantity="true"/>
+            <vulnerability name="К кровотечению" quantity="false"/>
+            <vulnerability name="К ядам" quantity="false"/>
+        </vulnerabilities>
+        <height>2.5</height>
+        <weight>250</weight>
+        <activityTime>Ночь</activityTime>
+        <recipe>
+            <name>Масло</name>
+            <ingredients>
+                <ingredient name="Собачье сало" quantity="1"/>
+                <ingredient name="Омела" quantity="5"/>
+            </ingredients>
+            <cookingTime>40</cookingTime>
+            <effectiveness>Средняя</effectiveness>
+        </recipe>
+    </creature>
+</bestiarium>

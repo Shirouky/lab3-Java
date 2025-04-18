@@ -1,0 +1,53 @@
+package objects;
+
+import java.util.Map;
+
+public class Recipe {
+    private String name;
+    private Map<String, Integer> ingredients;
+    private int cookingTime;
+    private String effectiveness;
+
+    // Конструкторы, геттеры и сеттеры
+    public Recipe() {}
+
+    public Recipe(String name, Map<String, Integer> ingredients,
+                  int cookingTime, String effectiveness) {
+        this.name = name;
+        this.ingredients = ingredients;
+        this.cookingTime = cookingTime;
+        this.effectiveness = effectiveness;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Map<String, Integer> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(Map<String, Integer> ingredients) {
+        this.ingredients = ingredients;
+    }
+
+    public int getCookingTime() {
+        return cookingTime;
+    }
+
+    public void setCookingTime(int cookingTime) {
+        this.cookingTime = cookingTime;
+    }
+
+    public String getEffectiveness() {
+        return effectiveness;
+    }
+
+    public void setEffectiveness(String effectiveness) {
+        this.effectiveness = effectiveness;
+    }
+}
