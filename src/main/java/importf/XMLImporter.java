@@ -88,7 +88,7 @@ public class XMLImporter extends CreatureImporter {
                                 currentCreature.setFirstMention(data);
                                 break;
                             case "height":
-                                currentCreature.setHeight(Double.valueOf(data));
+                                currentCreature.setHeight(Double.parseDouble(data));
                                 break;
                             case "weight":
                                 currentCreature.setWeight(Integer.parseInt(data));

@@ -10,7 +10,7 @@ import java.text.NumberFormat;
 
 
 public class ViewCreature extends JFrame {
-    JTextField name;
+    JLabel name;
     JTextField description;
     JFormattedTextField danger;
     JLabel areas;
@@ -28,7 +28,7 @@ public class ViewCreature extends JFrame {
         layout.setAutoCreateContainerGaps(true);
 
         this.creature = creature;
-        name = new JTextField(creature.getName());
+        name = new JLabel(creature.getName());
         description = new JTextField(creature.getDescription());
         danger = new JFormattedTextField(NumberFormat.getNumberInstance());
         danger.setValue(creature.getDangerLevel());
@@ -156,7 +156,6 @@ public class ViewCreature extends JFrame {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            creature.setName(name.getText());
             creature.setDescription(description.getText());
             creature.setDangerLevel(Integer.parseInt(danger.getText()));
             creature.setFirstMention(mention.getText());
