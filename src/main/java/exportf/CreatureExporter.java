@@ -5,7 +5,7 @@ import objects.Creature;
 import java.util.List;
 import java.util.Map;
 
-public abstract class CreatureExporter {
+public abstract class CreatureExporter implements Exporter {
     protected CreatureExporter next;
 
     public void setNext(CreatureExporter next) {

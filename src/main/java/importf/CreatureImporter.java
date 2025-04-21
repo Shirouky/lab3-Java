@@ -5,7 +5,7 @@ import objects.Creature;
 import java.io.File;
 import java.util.List;
 
-public abstract class CreatureImporter {
+public abstract class CreatureImporter implements Importer{
     protected CreatureImporter next;
 
     public void setNext(CreatureImporter next) {

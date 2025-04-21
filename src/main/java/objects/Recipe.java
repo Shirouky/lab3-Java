@@ -8,7 +8,8 @@ public class Recipe {
     private int cookingTime;
     private String effectiveness;
 
-    public Recipe() {}
+    public Recipe() {
+    }
 
     public String getName() {
         return name;
