@@ -39,7 +39,7 @@ public class XMLExporter extends CreatureExporter {
             xmlWriter.flush();
             xmlWriter.close();
             if (this.hasNext()) return next.exportCreatures(creatures);
-            else return false;
+            else return true;
         } catch (IOException | XMLStreamException e) {
             return false;
         }

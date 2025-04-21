@@ -51,7 +51,7 @@ public class JSONExporter extends CreatureExporter {
         try {
             objectMapper.writeValue(new File("result.json"), outputData);
             if (this.hasNext()) return next.exportCreatures(creatures);
-            else return false;
+            else return true;
         } catch (IOException e) {
             return false;
         }

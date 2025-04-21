@@ -35,7 +35,7 @@ public class YAMLExporter extends CreatureExporter {
 
             yaml.dump(yamlData, writer);
             if (this.hasNext()) return next.exportCreatures(creatures);
-            else return false;
+            else return true;
         } catch (IOException e) {
             return false;
         }
