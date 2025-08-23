@@ -11,6 +11,7 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.DefaultTreeSelectionModel;
 import javax.swing.tree.TreeSelectionModel;
 
+import java.awt.*;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
@@ -39,17 +40,15 @@ public class GUI extends JFrame {
                 setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
         add(new JScrollPane(creatureTree));
 
-        JMenuBar menuBar = new JMenuBar();
-        JMenu fileMenu = new JMenu("Файл");
-        JMenuItem importItem = new JMenuItem("Импорт");
-        JMenuItem exportItem = new JMenuItem("Экспорт");
+        JToolBar menuBar = new JToolBar();
+        JButton importItem = new JButton("Импорт");
+        JButton exportItem = new JButton("Экспорт");
         importItem.addActionListener(e -> importData());
         exportItem.addActionListener(e -> exportData());
 
-        fileMenu.add(importItem);
-        fileMenu.add(exportItem);
-        menuBar.add(fileMenu);
-        setJMenuBar(menuBar);
+        menuBar.add(importItem);
+        menuBar.add(exportItem);
+        add(menuBar, BorderLayout.NORTH);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
